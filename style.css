@@ -1,0 +1,219 @@
+    @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--poppins);
+        color: var(--white);
+    }
+
+    :root {
+        --black: #09112c;
+        --dark-black: black;
+        --white: white;
+        --purple: #2F5AF4;
+        --grey: #1D2837;
+        --black-light: #121212;
+        --poppins: "Poppins", sans-serif;
+        --museo: "MuseoModerno", sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        background: var(--dark-black);
+        height: 100vh;
+        padding: 50px;
+    }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+    }
+
+    .main_container .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .main_container .top #time {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .main_container .top h1 {
+        font-weight: 500;
+        color: var(--white);
+    }
+
+    .data {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        zoom: 60%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        max-width: 1200px;
+    }
+
+    div.condition_div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: var(--purple);
+        width: max-content;
+        padding: 30px 60px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.46);
+        font-weight: 600;
+        font-size: large;
+    }
+
+    h1 {
+        font-family: var(--museo);
+        font-size: xxx-large;
+        text-transform: capitalize;
+    }
+
+    svg {
+        height: 130px;
+        width: 130px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .svg_container {
+        position: relative;
+    }
+
+    .svg_container::before {
+        width: 100px;
+        height: 100px;
+        background: var(--white);
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+        border-radius: 100px;
+        filter: blur(60px);
+        z-index: 0;
+    }
+
+    header {
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        position: relative;
+        left: -20px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.temperature_div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: var(--black-light);
+        width: max-content;
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    div.heat_index {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: #12121287;
+        width: max-content;
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    div.wind {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: #12121287;
+        width: max-content;
+        max-width: 340px;
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    div.rain {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: #12121287;
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .data div:has(header) {
+        max-width: 360px;
+    }
+
+    .bottom {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .bottom p {
+        width: 100%;
+        display: flex;
+        font-weight: 400;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .bottom p span {
+        font-weight: 650;
+    }
+
+    div.humanidity {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: #12121287;
+        padding: 30px 60px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+    }
