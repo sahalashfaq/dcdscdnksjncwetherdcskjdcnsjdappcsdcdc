@@ -3,10 +3,10 @@ import requests
 from bs4 import BeautifulSoup
 from streamlit_autorefresh import st_autorefresh
 
-st.set_page_config(page_title="🌤️ Weather Dashboard", layout="wide")
+st.set_page_config(page_title="Weather Dashboard", layout="wide")
 
 # Auto-refresh every 10s
-st_autorefresh(interval=60_000, limit=None, key="weather_refresh")
+st_autorefresh(interval=10_000, limit=None, key="weather_refresh")
     
 st.markdown("""<style>
             header{
@@ -60,4 +60,5 @@ try:
 
 except Exception as e:
     st.error(f"Error: {e}")
+
     
