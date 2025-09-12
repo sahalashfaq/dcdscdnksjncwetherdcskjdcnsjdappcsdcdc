@@ -6,7 +6,7 @@ from streamlit_autorefresh import st_autorefresh
 st.set_page_config(page_title="Weather Dashboard", layout="wide")
 
 # Auto-refresh every 10s
-st_autorefresh(interval=5_000, limit=None, key="weather_refresh")
+st_autorefresh(interval=1_000, limit=None, key="weather_refresh")
     
 st.markdown("""<style>
             header{
@@ -62,6 +62,7 @@ except Exception as e:
     st.error(f"Error: {e}")
 
     
+
 
 
 
